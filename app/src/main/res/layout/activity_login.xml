@@ -59,7 +59,7 @@
         android:background="@drawable/custom_input"
         android:ems="10"
         android:padding="10dp"
-        android:text="are@sfedu.ru"
+        android:text=""
 
         android:hint="e-mail"
         android:inputType="textEmailAddress"
@@ -77,7 +77,7 @@
         android:background="@drawable/custom_input"
         android:ems="10"
 
-        android:text="Kira2014"
+        android:text=""
         android:padding="10dp"
         android:hint="Пароль"
         android:inputType="textPassword"
