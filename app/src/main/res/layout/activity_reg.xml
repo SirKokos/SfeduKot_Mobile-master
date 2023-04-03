@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:background="#EBD1FF"
+    app:layout_constraintBottom_toBottomOf="@+id/button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegActivity">
+
+        <TextView
+            android:id="@+id/regTitle"
+            android:layout_width="363dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:text="Регистрация пользователя"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+
+            android:id="@+id/email"
+            android:layout_width="325dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="e-mail"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintStart_toStartOf="@id/regTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/regTitle" />
+
+        <EditText
+
+            android:id="@+id/password"
+            android:layout_width="325dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            app:layout_constraintStart_toStartOf="@id/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <EditText
+
+            android:id="@+id/passwordConfirm"
+            android:layout_width="325dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            app:layout_constraintStart_toStartOf="@id/password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <TextView
+
+            android:id="@+id/regError"
+            android:layout_width="325dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#CA3C3C"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/passwordConfirm"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/passwordConfirm"
+            app:layout_constraintTop_toBottomOf="@+id/passwordConfirm"
+            />
+
+
+        <Button
+            android:id="@+id/confirmRegBtn"
+            android:layout_width="144dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_background"
+            android:bufferType="editable"
+            android:fontFamily="@font/comfortaa"
+            android:text="Отправить"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.855"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regError" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

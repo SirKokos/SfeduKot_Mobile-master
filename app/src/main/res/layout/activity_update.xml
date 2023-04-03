@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:background="#EBD1FF"
+    app:layout_constraintBottom_toBottomOf="@+id/button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UpdateActivity">
+
+        <TextView
+            android:id="@+id/updTitle"
+            android:layout_width="363dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="16dp"
+            android:text="Информация о пользователе"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+
+            android:id="@+id/name"
+            android:layout_width="325dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Имя"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/updTitle"
+            app:layout_constraintStart_toStartOf="@+id/updTitle"
+            app:layout_constraintTop_toBottomOf="@+id/updTitle" />
+
+        <EditText
+
+            android:id="@+id/surname"
+            android:layout_width="325dp"
+
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Фамилия"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+
+            />
+
+        <EditText
+
+            android:id="@+id/patronymic"
+            android:layout_width="325dp"
+
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Отчество"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/surname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/surname"
+            app:layout_constraintTop_toBottomOf="@+id/surname"
+            />
+
+        <EditText
+
+            android:id="@+id/role"
+            android:layout_width="325dp"
+
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Должность"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/patronymic" />
+
+        <EditText
+
+            android:id="@+id/course"
+            android:layout_width="325dp"
+
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Курс"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/specialization"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/specialization"
+            app:layout_constraintTop_toBottomOf="@+id/specialization"
+
+            />
+
+        <EditText
+
+            android:id="@+id/groupNum"
+            android:layout_width="325dp"
+
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Номер группы"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/course"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/course"
+            app:layout_constraintTop_toBottomOf="@+id/course" />
+
+        <EditText
+
+            android:id="@+id/specialization"
+            android:layout_width="325dp"
+
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+
+            android:hint="Специальность"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/faculty"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/faculty"
+            app:layout_constraintTop_toBottomOf="@+id/faculty"
+
+            />
+
+        <EditText
+
+            android:id="@+id/faculty"
+            android:layout_width="325dp"
+
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:hint="Факультет"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/role"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/role"
+            app:layout_constraintTop_toBottomOf="@+id/role" />
+
+
+        <Button
+            android:id="@+id/updBtn"
+            android:layout_width="144dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_background"
+            android:bufferType="editable"
+            android:fontFamily="@font/comfortaa"
+            android:text="Обновить"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.855"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groupNum" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

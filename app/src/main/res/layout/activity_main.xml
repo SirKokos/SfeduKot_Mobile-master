@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fone"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="188dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcomeView"
+        android:layout_width="304dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Добро пожаловать в SfeduKot,"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="незнакомец"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeView" />
+
+    <Button
+        android:id="@+id/userDataBtn"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/comfortaa"
+        android:text="Информация обо мне (Пока тесты)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/getQrBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextView"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <Button
+        android:id="@+id/getQrBtn"
+        android:layout_width="189dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/comfortaa"
+        android:text="Сканировать код"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
